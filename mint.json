@@ -1,65 +1,139 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Documentation Starter Kit",
+  "name": "Invntio Docs",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "dark": "/assets/logo/dark.png",
+    "light": "/assets/logo/light.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/assets/favicon.png",
   "colors": {
-    "primary": "#0069ED",
-    "light": "#4D9CFF",
-    "dark": "#0050B4"
+    "primary": "#18B47D",
+    "light": "#6EF2C1",
+    "dark": "#177D54"
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
+      "name": "Our Website",
       "url": "https://mintlify.com/docs"
     }
   ],
+  "api": {
+    "baseUrl": "http://localhost:3000"
+  },
+  "openapi": "https://api.swaggerhub.com/apis/vvelc/inventio/0.1.0",
   "topbarCtaButton": {
     "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
+    "url": "https://github.com/vvelc/invntio"
+  },
+  "topAnchor": {
+    "name": "Introduction"
   },
   "anchors": [
     {
       "name": "API Reference",
       "icon": "rectangle-terminal",
-      "url": "api-reference"
+      "url": "docs/api-reference"
     },
     {
-      "name": "Changelog",
-      "icon": "list",
-      "url": "https://mintlify.com"
+      "name": "Self-hosting",
+      "icon": "server",
+      "url": "docs/self-hosting"
     },
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://mintlify.com/community"
+      "name": "Contributing",
+      "icon": "code-simple",
+      "url": "docs/contributing"
+    },
+    {
+      "name": "Support us",
+      "icon": "hand-holding-dollar",
+      "url": "docs/support-us"
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/vvelc/inventio"
     }
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
+      "group": "Welcome",
+      "pages": ["docs/introduction/welcome/introduction"]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Getting Started",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "docs/introduction/getting-started/quick-start",
+        "docs/introduction/getting-started/concepts",
+        "docs/introduction/getting-started/arquitecture",
+        "docs/introduction/getting-started/features",
+        "docs/introduction/getting-started/roadmap"
+      ]
+    },
+    {
+      "group": "Fundamentals",
+      "pages": [
+        "docs/introduction/fundamentals/requests",
+        "docs/introduction/fundamentals/responses",
+        "docs/introduction/fundamentals/exceptions"
+      ]
+    },
+    {
+      "group": "Security",
+      "pages": [
+        "docs/introduction/security/validation",
+        "docs/introduction/security/xss-filter"
+      ]
+    },
+    {
+      "group": "Overview",
+      "pages": [
+        "docs/api-reference/overview/introduction",
+        "docs/api-reference/overview/authentication"
+      ]
+    },
+    {
+      "group": "Endpoints",
+      "pages": [
+        {
+          "group": "Categories",
+          "pages": [
+            "docs/api-reference/endpoints/categories/create",
+            "docs/api-reference/endpoints/categories/get",
+            "docs/api-reference/endpoints/categories/get-with-subcategories",
+            "docs/api-reference/endpoints/categories/get-one",
+            "docs/api-reference/endpoints/categories/get-one-with-subcategories",
+            "docs/api-reference/endpoints/categories/update",
+            "docs/api-reference/endpoints/categories/delete"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Self-hosting",
+      "pages": [
+        "docs/self-hosting/self-hosting/database",
+        "docs/self-hosting/self-hosting/configuration",
+        "docs/self-hosting/self-hosting/testing"
+      ]
+    },
+    {
+      "group": "Contributing",
+      "pages": [
+        "docs/contributing/contributing/overview",
+        "docs/contributing/contributing/code-of-conduct"
+      ]
+    },
+    {
+      "group": "Support Us",
+      "pages": [
+        "docs/support-us/support-us/support"
       ]
     }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
+    "github": "https://github.com/vvelc/invntio",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
 }
